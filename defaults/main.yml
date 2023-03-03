@@ -1,0 +1,20 @@
+# Copyright (c) 2023, Bennett Samowich <bennett@foolean.org>
+# All rights reserved
+# SPDX short identifier: BSD-3-Clause
+---
+
+# limits_core_hard
+#     The value to set for 'hard core' in /etc/security/limits.conf
+#   Setting this to 0 will prevent the system from generating core dumps
+#   (default: 0) Ref: CIS
+limits_core_hard: 0
+
+# limits_core_soft
+#   The value to set for 'soft core' in /etc/security/limits.conf
+#   (default: 0)
+limits_core_soft: 0
+
+# limits_fs_suid_dumpable
+#   Specify if suid programs can dump core (0=disable, 1=enable)
+#   (default: 0)
+limits_fs_suid_dumpable: 0
